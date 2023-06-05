@@ -3,7 +3,7 @@
 npm link create-app
 ```
 ## 构建项目
-``js
+```js
 create-app init
 ```
 

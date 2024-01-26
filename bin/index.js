@@ -46,7 +46,7 @@ program
   .description('模版列表')
   .action(() => {
     console.log(chalk.blue(
-      `vue: vue3-templates`
+      `后台: [vue3+ts+vite+elment-puls,vue3+vite+ts(无UI)]`
     ))
   })
 

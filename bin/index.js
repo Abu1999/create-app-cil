@@ -24,14 +24,14 @@ program
       const spinner = ora('正在下载模版...').start();
       const {downloadUrl} = templates[templateName];
       //download 
-      download(downloadUrl, projectName, (err) => {
+      download(downloadUrl, projectName,{ clone: true }, (err) => {
         if(err) {
           spinner.fail();
           console.log(logSymbols.error, chalk.red(err))
           return;
         }
         spinner.succeed(); // 下载成功提示
-        console.log(chalk.yellow('初始化模版成功'))
+        console.log(chalk.yellow('初始化模版成功\n'))
         console.log(chalk.green(
         ` cd ${projectName}\n pnpm\n pnpm dev`
         ))

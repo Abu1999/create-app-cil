@@ -33,7 +33,7 @@ program
         spinner.succeed(); // 下载成功提示
         console.log(chalk.yellow('初始化模版成功'))
         console.log(chalk.green(
-        ` cd ${projectName}\n yarn\n yarn dev`
+        ` cd ${projectName}\n pnpm\n pnpm dev`
         ))
       })
 

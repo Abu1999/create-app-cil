@@ -1,22 +1,19 @@
-/*
- * @Author: bbw 1526699702@qq.com
- * @Date: 2024-01-24 17:07:48
- * @LastEditors: bbw 1526699702@qq.com
- * @LastEditTime: 2024-01-26 14:49:11
- * @FilePath: \create-app-cil\templates\index.js
- * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
- */
 export const templates = {
-  'vue3-templates' : {
-    url: 'https://github.com/Abu1999/vue3-templates',
-    downloadUrl: 'direct:https://github.com/Abu1999/vue3-templates.git#main',
-    description: 'vue模版'
+  'vue3-template' : {
+    url: 'https://github.com/Abu1999/vue3-template-v2.0',
+    downloadUrl: 'direct:https://github.com/Abu1999/vue3-template-v2.0.git#main',
+    description: 'vue空白模版'
   },
-  'vue3-templates-notUI' : {
-    url: 'https://github.com/Abu1999/vue3-templates-notUI',
-    downloadUrl: 'direct:https://github.com/Abu1999/vue3-templates-notUI.git#main',
-    description: 'vue模版'
-  }
+  'admin-web-tdesign' : {
+    url: 'https://github.com/Abu1999/admin-web-tdesign',
+    downloadUrl: 'direct:https://github.com/Abu1999/admin-web-tdesign.git#main',
+    description: 'vue后台模版'
+  },
+  'uniapp-wot-template' : {
+    url: 'https://github.com/Abu1999/uniapp-wot-template',
+    downloadUrl: 'direct:https://github.com/Abu1999/uniapp-wot-template.git#main',
+    description: 'uniapp模板'
+  },
 }
 
 export const questions  =[
@@ -26,8 +23,9 @@ export const questions  =[
       message: "请选择模版",
       default: 0,
       choices: [
-        { value: 'vue3-templates', name: 'vue3+ts+vite+elment-puls' },
-        { value: 'vue3-templates-notUI', name: 'vue3+vite+ts(无UI)' }
+        { value: 'vue3-templates', name: 'vue空白模版' },
+        { value: 'admin-web-tdesign', name: 'vue后台模版' },
+        { value: 'uniapp-wot-template', name: 'uniapp模板' }
     ]
     },
     {

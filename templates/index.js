@@ -23,7 +23,7 @@ export const questions  =[
       message: "请选择模版",
       default: 0,
       choices: [
-        { value: 'vue3-templates', name: 'vue空白模版' },
+        { value: 'vue3-template', name: 'vue空白模版' },
         { value: 'admin-web-tdesign', name: 'vue后台模版' },
         { value: 'uniapp-wot-template', name: 'uniapp模板' }
     ]

@@ -24,7 +24,7 @@ program
       const spinner = ora('正在下载模版...').start();
       const {downloadUrl} = templates[templateName];
       //download 
-      download(downloadUrl, projectName,{ clone: true }, (err) => {
+      download(downloadUrl, projectName, (err) => {
         if(err) {
           spinner.fail();
           console.log(logSymbols.error, chalk.red(err))
